@@ -1,0 +1,117 @@
+<html>
+<head>
+	<title> Trek India</title>
+    <link rel="stylesheet" type="text/css" href="css/travelling.css">
+	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+</head>
+<body>
+	<header>
+		<div class="title">
+			<img src="logo.jpg">
+		</div>
+		<div class="navbar">
+			<a href="../Travelling/travelling.html">Home</a>
+		  	<a href="../Travelling/weekendtreks.html">Weekend Treks</a>
+		  	<a href="../Travelling/wintertrecks.html">Winter Treks</a>
+		  	<a href="../Travelling/cutomizetrips.html">Customize Trips</a>
+		  	<a href="../Travelling/blog.html">Articles & Blogs</a>
+		  	<a href="../Travelling/login.html" class="right">Login</a>
+		</div>
+        
+    </header>
+
+
+	<script>
+	function validate()
+	{
+		var name=document.forms["form"]["fname"].value;
+		if(name=="")
+		{
+			alert("Enter name!");
+			return false;
+		}
+		var phno=document.forms["form"]["phno"].value;
+		if((phno.length!=10) || isNaN(phno))
+		{
+			alert("Invalid contact number!");
+			return false;
+		}
+		var email=document.forms["form"]["mail"].value;
+		var mail_val=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+		if(!mail_val.test(email))
+		{
+			alert("Invalid email!");
+			return false;
+		}
+		var pswd=document.forms["form"]["psw"].value;
+		if(pswd.length<8)
+		{
+			alert("Enter valid password!");
+			return false;
+		}
+		var con_pswd=document.forms["form"]["c_psw"].value;
+		if(pswd!=con_pswd)
+		{
+			alert("Doesn't match original password!");
+			return false;
+		}
+		var pin=document.forms["form"]["pin"].value;
+		if(pin.length!=6 || isNaN(pin))
+		{
+			alert("Invalid Pincode!");
+			return false;
+		}
+		else
+		{
+			return true;
+		}
+	}
+	</script>
+	<body>
+	<form name="form" class="signin_form" method="get" action="final.html">
+		<article>
+               <h1>Registration Form</h1><br>
+            <center>
+               <label for="name">User Name:</label>
+               <input type="text" placeholder="Enter Name" name="name" id="fn"><br><br>
+
+               <label for="mobile_no">Mobile No :</label>
+               <input type="text" placeholder="Contact No" name="mobile_no" id="ph"><br><br> 
+
+               <label for="email">Email    :</label>
+               <input type="text" placeholder="Enter Email" name="email" id="ml"><br><br>
+
+               <label for="pin_code">Pin code :</label>
+               <input type="text" placeholder="Enter PinCode" name="p_no" id="pc"><br><br>
+
+               <label for="pwd">Password :</label>
+               <input type="password" placeholder="Enter Password" name="pwd" id="pd"><br><br>
+
+               <label for="name">Confirm Password:</label>
+               <input type="password" placeholder="Confirm Password" name="cpwd" id="pd_c"><br><br>
+
+               <input type="submit" style="width:70px;height:30px;" name="button" id="s_butt" value="Submit" onclick="return validate()">&nbsp;&nbsp;&nbsp;
+               <input type="submit" style="width:70px;height:30px;" name="cancel" id="c_id" value="Cancel">
+            </center>    
+        </article>
+	</form><br>
+	
+</body>
+
+<footer>
+    	
+<div class="footer">
+		<div>
+			<div class="info_ft">
+			<a href="#">Discount Policy |</a>
+		  	<a href="#">Cancellation Policy |</a>
+		  	<a href="#">Disclaimer |</a>
+		  	<a href="#">Terms and Conditions |</a>
+            <a href="#">Website Privacy |</a>
+		  	<a href="#">Contact Us |</a>
+		  	<a href="#">About Us </a>
+		    </div>
+		</div>		
+</div>
+</footer>
+</html>

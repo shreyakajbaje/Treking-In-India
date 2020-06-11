@@ -1,0 +1,142 @@
+*{
+    margin:0;
+	padding:0;
+	font-family:Century Gothic;
+}
+
+body
+{
+	height: 100vh;
+	background-size:cover;
+    max-width: 100%;
+    overflow-x: hidden;
+	background-position:center;
+
+}
+
+header{
+	background-color:white;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #000000;
+}
+
+.navbar a {
+  float: left; 
+  display: block; 
+  color: white; 
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a.right {
+  float: right;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black; 
+}
+
+.title img{
+	width:150px;
+    float: center;
+	height: auto;
+}
+
+.align_img{
+  float:none;
+  padding:2%;
+}
+
+img{
+    height: 450px;
+}
+
+.intro{
+    font-size: 20px;
+    padding: 2%;
+}
+
+.content{
+    text-align:center;
+    padding: 1%;
+    font-size: 20px;
+    text-decoration-style: solid;
+}
+
+h2{
+    font-size: 40px;    
+    text-align: center;
+    padding: 0%;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+.center{
+    text-align: center;
+}
+
+.info_ft {
+  overflow: hidden;
+  background-color: #000000;
+}
+
+.info_ft a {
+  font-size: 18px;
+  float:left;
+  color: white;
+  display: block;   
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.info_ft a.right {
+  float: right;
+}
+
+img.center{
+  padding: 20px;    
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+.footer{
+  position:inherit;   
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  color:white;
+  font-size: 20%;
+  background-color:#000000;
+  height:2%;
+  clear:both;
+  padding:50px;    
+}
