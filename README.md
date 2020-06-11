@@ -9,12 +9,11 @@ Treking In India - Guide for Beginners
   - CSS
   
 ## Steps to run
-1. Clone or download the repository
-2. Unzip the folder
-3. Open terminal and browse to the project directory(where manage.py is present)
-4. Execute the command >python manage.py runserver 
-5. The server will be running at localhost:8000
-6. Quit the server with CTRL-BREAK
+1.Pull down the code locally.
+2.Open Downloaded file.
+3.Unzip th downloaded file.
+4.Inside locate "Travelling.html" file.
+5.Run the file on browser.
 
 ## Sample Pictures
 
